@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Fz+63TkwaQE/mzq26CTZ6xuzO96NfNUvIYFu+Ca7bySWxRTxC2ZUciNBWdtJtZlTbyzl8fZ394O9zaqK8JUC1Q==",
+  "success": true,
+  "projectFilePath": "C:\\OjaiSistemas\\PruebaLogin\\Examen\\AlumnosRepository\\AlumnosRepository.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\redes\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,81 @@
+﻿@page "/"
+
+@inject IServiciosAlumnos serviciosalumnos
+
+<h3>Lista de Alumnos</h3>
+@Message
+
+@if (alumno == null)
+{
+   <p><em>Cargando...</em></p> 
+}else{
+
+
+
+
+
+
+<a href="/detallealumno">Nuevo Alumno</a>
+<div class="row">
+    <div class="col-md-4">
+      <div class="input-group">
+        <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+        <button type="button" class="btn btn-outline-primary">search</button>
+</div>
+
+    </div>
+
+</div>
+
+
+ <table class="table">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido Paterno</th>
+                <th>Apellido Materno</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var alumnos in alumno)
+            {
+                <tr>
+                    <td>@alumnos.Nombre</td>
+                    <td>@alumnos.ApellidoP</td>
+                    <td>@alumnos.ApellidoM</td>
+                    <td><a href ="/detallealumno/@alumnos.Id">Editar</a></td>
+                    <td><a href ="/formularioborrar/@alumnos.Id">Borrar</a></td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+
+
+
+}
+
+
+@code {
+    IEnumerable<Alumnos> alumno;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            alumno = await serviciosalumnos.ListarAlumnos();
+        }
+        catch (Exception e)
+        {
+            Message = "Error..." + e.Message;
+        }
+
+        
+
+    }
+     
+     public string Message { get; set; }
+
+}

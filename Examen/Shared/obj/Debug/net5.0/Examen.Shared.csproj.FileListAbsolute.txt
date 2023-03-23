@@ -1,0 +1,12 @@
+C:\OjaiSistemas\PruebaLogin\Examen\Examen\Shared\bin\Debug\net5.0\Examen.Shared.deps.json
+C:\OjaiSistemas\PruebaLogin\Examen\Examen\Shared\bin\Debug\net5.0\Examen.Shared.dll
+C:\OjaiSistemas\PruebaLogin\Examen\Examen\Shared\bin\Debug\net5.0\Examen.Shared.pdb
+C:\OjaiSistemas\PruebaLogin\Examen\Examen\Shared\obj\Debug\net5.0\Examen.Shared.csproj.AssemblyReference.cache
+C:\OjaiSistemas\PruebaLogin\Examen\Examen\Shared\obj\Debug\net5.0\Examen.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\OjaiSistemas\PruebaLogin\Examen\Examen\Shared\obj\Debug\net5.0\Examen.Shared.AssemblyInfoInputs.cache
+C:\OjaiSistemas\PruebaLogin\Examen\Examen\Shared\obj\Debug\net5.0\Examen.Shared.AssemblyInfo.cs
+C:\OjaiSistemas\PruebaLogin\Examen\Examen\Shared\obj\Debug\net5.0\Examen.Shared.csproj.CoreCompileInputs.cache
+C:\OjaiSistemas\PruebaLogin\Examen\Examen\Shared\obj\Debug\net5.0\Examen.Shared.dll
+C:\OjaiSistemas\PruebaLogin\Examen\Examen\Shared\obj\Debug\net5.0\refint\Examen.Shared.dll
+C:\OjaiSistemas\PruebaLogin\Examen\Examen\Shared\obj\Debug\net5.0\Examen.Shared.pdb
+C:\OjaiSistemas\PruebaLogin\Examen\Examen\Shared\obj\Debug\net5.0\ref\Examen.Shared.dll

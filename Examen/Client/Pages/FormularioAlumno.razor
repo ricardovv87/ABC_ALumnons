@@ -1,0 +1,113 @@
+﻿@page "/detallealumno"
+@page "/detallealumno/{id:int}"
+
+@inject IServiciosAlumnos servicios;
+@inject NavigationManager naviagte;
+
+<h3>FormularioAlumno</h3>
+
+@if (alumno == null) {<p>Cargando...</p>}
+else
+{
+    
+
+    <EditForm Model="alumno" OnValidSubmit="Guardar">
+
+    <div class="card">
+        <h5 class="card-header">Datos Alumno</h5>
+        <div class="card-body">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <label>Nombre</label>
+                        <InputText class="form-control"@bind-Value="alumno.Nombre"></InputText>
+                    </div>
+
+                     <div class="col-md-6">
+                        <label>Apellido Paterno</label>
+                        <InputText class="form-control"@bind-Value="alumno.ApellidoP"></InputText>
+                    </div>
+
+                </div>
+
+                 <div class="row">
+                    <div class="col-md-6">
+                        <label>Apellido Materno</label>
+                        <InputText class="form-control"@bind-Value="alumno.ApellidoM"></InputText>
+                    </div>
+
+                </div>
+  
+                <br/>
+                  <div class="row">
+                    <div class="col-md-4">
+                       
+                    </div>
+
+                     <div class="col-md-4">
+                      <input type="submit" class="btn btn-success" value="Guardar"/>
+                       <input type="button" class="btn btn-secondary" value="Cancelar" @onclick="NavigateHome" />
+                    </div>
+
+                    <div class="col-md-4">
+                       
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</EditForm>
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+@code {
+    public Alumnos alumno;
+
+    [Parameter]
+    public int id { get; set; }
+
+    protected async override Task OnInitializedAsync(
+
+    )
+    {
+        
+
+        if (id == 0)
+            alumno = new Alumnos();
+        else
+            alumno = await servicios.DetalleAlumno(id);
+
+
+
+    }
+
+    protected async Task Guardar()
+    {
+        await servicios.GuardarAlumno(alumno);
+        NavigateHome();
+    }
+
+    private void NavigateHome()
+    {
+        naviagte.NavigateTo("/");
+    }
+
+
+
+}

@@ -1,0 +1,101 @@
+﻿@page "/formularioborrar/{id:int}"
+
+@inject IServiciosAlumnos servicios;
+@inject NavigationManager naviagte;
+
+<h3>FormularioBorrar</h3>
+
+@if (alumno == null) 
+{<p><em>Cargando...</em></p> }
+else{
+
+
+
+<EditForm Model="alumno" OnValidSubmit="Borrar">
+
+    <div class="card">
+        <h5 class="card-header">Datos de Alumno</h5>
+        <div class="card-body">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <label>Nombre</label>
+                        <InputText class="form-control"@bind-Value="alumno.Nombre"></InputText>
+                    </div>
+
+                     <div class="col-md-6">
+                        <label>Apellido Paterno</label>
+                        <InputText class="form-control"@bind-Value="alumno.ApellidoP"></InputText>
+                    </div>
+
+                </div>
+
+                 <div class="row">
+                    <div class="col-md-6">
+                        <label>Apellido Materno</label>
+                        <InputText class="form-control"@bind-Value="alumno.ApellidoM"></InputText>
+                    </div>
+
+                </div>
+  
+                  <br/>
+                  <div class="row">
+                    <div class="col-md-4">
+                       
+                    </div>
+
+                     <div class="col-md-4">
+                      <input type="submit" class="btn btn-danger" value="Borrar"/>
+                       <input type="button" class="btn btn-secondary" value="Cancelar" @onclick="NavigateHome" />
+                    </div>
+
+                    <div class="col-md-4">
+                       
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</EditForm>
+
+
+
+
+
+
+
+
+}
+
+@code {
+
+    public Alumnos alumno;
+
+    [Parameter]
+    public int id { get; set; }
+
+    protected async override Task OnInitializedAsync()
+    {
+      alumno = await servicios.DetalleAlumno(id);
+    }
+
+    protected async Task Borrar()
+    {
+        await servicios.BorrarAlumno(id);
+        NavigateHome();
+    }
+
+    private void NavigateHome()
+    {
+        naviagte.NavigateTo("/");
+    }
+
+
+
+
+
+}

@@ -1,0 +1,15 @@
+C:\OjaiSistemas\PruebaLogin\Examen\AlumnosRepository\bin\Debug\net5.0\AlumnosRepository.deps.json
+C:\OjaiSistemas\PruebaLogin\Examen\AlumnosRepository\bin\Debug\net5.0\AlumnosRepository.dll
+C:\OjaiSistemas\PruebaLogin\Examen\AlumnosRepository\bin\Debug\net5.0\AlumnosRepository.pdb
+C:\OjaiSistemas\PruebaLogin\Examen\AlumnosRepository\bin\Debug\net5.0\Examen.Shared.dll
+C:\OjaiSistemas\PruebaLogin\Examen\AlumnosRepository\bin\Debug\net5.0\Examen.Shared.pdb
+C:\OjaiSistemas\PruebaLogin\Examen\AlumnosRepository\obj\Debug\net5.0\AlumnosRepository.csproj.AssemblyReference.cache
+C:\OjaiSistemas\PruebaLogin\Examen\AlumnosRepository\obj\Debug\net5.0\AlumnosRepository.GeneratedMSBuildEditorConfig.editorconfig
+C:\OjaiSistemas\PruebaLogin\Examen\AlumnosRepository\obj\Debug\net5.0\AlumnosRepository.AssemblyInfoInputs.cache
+C:\OjaiSistemas\PruebaLogin\Examen\AlumnosRepository\obj\Debug\net5.0\AlumnosRepository.AssemblyInfo.cs
+C:\OjaiSistemas\PruebaLogin\Examen\AlumnosRepository\obj\Debug\net5.0\AlumnosRepository.csproj.CoreCompileInputs.cache
+C:\OjaiSistemas\PruebaLogin\Examen\AlumnosRepository\obj\Debug\net5.0\AlumnosRepository.csproj.CopyComplete
+C:\OjaiSistemas\PruebaLogin\Examen\AlumnosRepository\obj\Debug\net5.0\AlumnosRepository.dll
+C:\OjaiSistemas\PruebaLogin\Examen\AlumnosRepository\obj\Debug\net5.0\refint\AlumnosRepository.dll
+C:\OjaiSistemas\PruebaLogin\Examen\AlumnosRepository\obj\Debug\net5.0\AlumnosRepository.pdb
+C:\OjaiSistemas\PruebaLogin\Examen\AlumnosRepository\obj\Debug\net5.0\ref\AlumnosRepository.dll
